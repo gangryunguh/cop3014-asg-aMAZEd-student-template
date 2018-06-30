@@ -103,7 +103,7 @@ void readMaze(ifstream &fin, int states[][MAX_GRID_COL],
     char c;
     fin.get(c);
 
-    cout << "You need to implement readMaze function" << endl;
+    cout << "***YOU NEED TO IMPLEMENT readMaze function***" << endl;
 
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -126,7 +126,7 @@ void solveMaze(Maze &maze, int states[][MAX_GRID_COL],int rows, int cols,
     int row = startRow;
     int col = startCol;
 
-    cout << "YOU NEED TO IMPLEMENT solveMaze function!" << endl;
+    cout << "***YOU NEED TO IMPLEMENT solveMaze function**!" << endl;
 
     // restore start and exit value
     states[startRow][startCol] = START_M;
