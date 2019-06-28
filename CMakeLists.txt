@@ -7,7 +7,7 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 endif (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 
 set(CMAKE_CXX_STANDARD 11)
-set(SOURCE_FILES maze.cpp maze.h cell.h cell.cpp asg8.cpp)
+set(SOURCE_FILES maze.cpp maze.h cell.h cell.cpp aMAZEd.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
