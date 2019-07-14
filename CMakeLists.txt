@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-set(PROJECT_NAME asg8)
+set(PROJECT_NAME asg-aMAZEd)
 project(${PROJECT_NAME})
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
@@ -9,7 +9,11 @@ endif (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES maze.cpp maze.h cell.h cell.cpp aMAZEd.cpp)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+
+
 
 if (WIN32)
     set(SFML_STATIC_LIBRARIES TRUE)
